@@ -1,0 +1,18 @@
+Rust programs have 3 mem regions where data is stored:
+
+1) Data Memory: 
+    for data that is fixed in size and STATIC; ex: "Hello, World!" - string
+    STATIC meaning always available through life of program
+    very fast - since locations are known and fixed
+
+2) Stack Memory: 
+    for data that is declared as variables within a func
+    location of this mem never changes for the duration of func call
+    very fast to access
+
+3) Heap Memory:
+    for data that is created while application is running
+    data may be added, removed, moved, resized, etc
+    dynamic nature -> generally slower -> allows creative usage of mem
+    adding data to this region = allocation
+    removing data from this region = deallocation
